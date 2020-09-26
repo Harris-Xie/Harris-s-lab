@@ -1,0 +1,34 @@
+
+
+0.IDE:pycharm 
+下载地址：https://www.jetbrains.com/pycharm/download/#section=mac
+
+一、
+1.后端功能用python实现
+
+2.前端：python安装pyqt5包后可以方便的使用qt相关的中的GUI设计功能。
+pyqt5教程：http://code.py40.com/pyqt5/16.html
+pyqt简介：
+“PyQt是一个用于创建GUI应用程序的跨平台工具包，它将Python与Qt库融为一体。也就是说，PyQt允许使用Python语言调用Qt库中的API。这样做的最大好处就是在保留了Qt高运行效率的同时，大大提高了开发效率。因为，使用Python语言开发程序要比使用C++语言开发程序快得多。PyQt对Qt做了完整的封装，几乎可以用PyQt做Qt能做的任何事情。”
+
+“由于目前最新的PyQt版本是5.11，所以习惯上成为PyQt为PyQt5。”
+
+3.
+pycharm 和 PyQt5 开发python GUI程序。
+https://blog.csdn.net/passionboyxie/article/details/76174653
+
+4.用tkinter模块开发gui
+https://www.jianshu.com/p/91844c5bca78
+
+二、微信小程序
+          （1）后端python+flask
+          （2）“前端开发使用微信web开发者工具，语言使用js。建议去看一下微信小程序开发者文档，      里面有详细介绍和教程。”
+
+
+
+三、Qt,c++.
+
+四、java
+
+......
+
