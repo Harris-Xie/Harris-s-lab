@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/super/index",
+    "pages/activity_list/activity_list",
+    "pages/logs/logs",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "通用计算器",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/jisuanqi_1.png",
+        "selectedIconPath": "image/jisuanqi_1_g.png",
+        "text": "通用计算器"
+      },
+      {
+        "pagePath": "pages/activity_list/activity_list",
+        "iconPath": "image/16.png",
+        "selectedIconPath": "image/16_g.png",
+        "text": "金融计算器"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/jijindingtou.png",
+        "selectedIconPath": "image/jijindingtou_g.png",
+        "text": "基金定投"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "我"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
