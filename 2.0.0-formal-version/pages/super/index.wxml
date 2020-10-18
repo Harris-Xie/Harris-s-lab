@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+
+    <!-- screen -->
+    <view class="screen">
+        <view plain="true" wx:for-items="{{lines}}" wx:for-index="idx" wx:for-item="line" wx:key="unique">
+            <button wx:if="{{idx == 4}}" class="current" plain="true">{{line}}</button>
+            <button wx:else plain="true">{{line}}</button>
+        </view>
+    </view>
+
+    <!-- keyboard -->
+    <view class="keyboard">
+        <view class="key-rows" wx:for-items="{{layout}}" wx:for-item="itemName" wx:key="unique">
+            <view class="key" wx:for-items="{{itemName}}" wx:for-index="id" wx:for-item="keyInfo" wx:key="unique">
+                <block wx:if = "{{keyInfo.ii==1}}">
+                    <button bindtap="{{keyInfo.opt}}" id="{{keyInfo.id}}" class=".func1">{{keyInfo.value}}</button>
+                </block>
+                <block wx:if = "{{keyInfo.ii==2}}">
+                    <button bindtap="{{keyInfo.opt}}" id="{{keyInfo.id}}" class=".func2">{{keyInfo.value}}</button>
+                </block>
+                <block wx:if = "{{keyInfo.ii!=1}}">
+                    <block wx:if = "{{keyInfo.ii!=2}}">
+                        <button bindtap="{{keyInfo.opt}}" id="{{keyInfo.id}}" class="=.func" >{{keyInfo.value}}</button>
+                    </block>
+                </block>
+            </view>
+        </view>
+    </view>
+
+</view>

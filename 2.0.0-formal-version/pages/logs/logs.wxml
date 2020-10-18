@@ -1,0 +1,70 @@
+
+
+<view class="top-bgimage" id="ppp" bindlongtap="bindRefresh">
+  <view class="container">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+</view>
+<view class="container" id="bbb">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      
+      <view class="page-section page-section-gap" id="slider_1">
+        <view class="page-section-title" id="aaa">收益放大器</view>
+        <slider value="1" name="slider" min="1" max="3" show-value ></slider>
+      </view>
+
+      <view class="page-section">
+        <view class="page-section-title">本次定投金额</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 40rpx 0rpx 40rpx 0rpx" >
+              <input class="weui-input" name="input" type="number" placeholder="请输入金额" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="page-section" id="codes" >
+        <view class="page-section-title" id="ccc">基金代码</view>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__bd" style="margin: 40rpx 0rpx 40rpx 0rpx" >
+              <input class="weui-input_c" name="input_c" type="number" placeholder="请输入6位基金代码" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-area">
+        <button id="btn1" style="margin: 30rpx 0" type="primary" formType="submit" plain="true">计算定投金额</button>
+        <input disabled="true" wx:if="{{pickerHidden}}" placeholder="您第一次定投此只基金哦"></input>
+        <view class="money" wx:if="{{name}}">
+             <view wx:if="{{advice_value}}">建议定投金额：{{advice_value}}</view>
+             <view wx:elif="{{inputValue}}">建议定投金额： {{inputValue}} </view>
+        </view>
+        <view class="duke">
+            
+            <view class="body-view" id="switch_1">
+                <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>基金信息
+            </view>
+       </view>
+       <block wx:if="{{more}}">
+        <scroll-view  id="scoll" scroll-y="true" style="height: 150rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}} ">
+            <view wx:if="{{name}}" class="scroll-view-item" font-style="oblique" >基金名称：{{name}}</view>
+            <view wx:if="{{jz}}" class="scroll-view-item" >基金当晚净值：{{jz}}</view>
+            <view wx:if="pickerHidden" class="scroll-view-item" >上次定投净值为：{{jz_last}}</view>
+        </scroll-view>
+            
+       </block> 
+        <button id="btn2" style="margin: 30rpx 0" formType="reset" type="primary" plain="true">确认定投</button>
+      </view>
+      
+
+      
+      
+    </form>
+    
+  </view>
+</view>
