@@ -1,0 +1,75 @@
+
+.scroll-view-item{
+  height: 50rpx;
+  font-style:italic
+}
+#scoll{
+  border: 3rpx solid #D2B48C;
+  border-radius: 0rpx;
+  padding: 10rpx;
+  margin: 10rpx 0rpx 10rpx 0rpx;
+  border-width: 5rpx;
+  background-color: #FFFFFF;
+}
+#switch_1{
+  font-weight: lighter;
+  color:rgb(70, 66, 66);
+  margin: 40rpx 0rpx 40rpx 0rpx;
+}
+#slider_1{
+  margin:80rpx 0rpx 15rpx 0rpx;
+  height: 200rpx;
+}
+#codes{
+  margin-bottom: 60rpx;
+}
+.page-section-title{
+  font-weight: lighter;
+  font-size: larger ;
+  border:2rpx;
+  border-radius: 0rpx;
+  color:white;
+  background-color: #696969;
+  height:60rpx;
+  width: 250rpx;
+  text-align: center;
+}
+.weui-input.placeholder{
+ font-style: italic;
+ font-weight: lighter;
+}
+#bbb{
+   background-color:#FFFFFF;
+   height:1500rpx;
+   font-weight: light;
+}
+#ppp{
+  background-color:#BC8F8F;
+  height: 340rpx;
+}
+#aaa{
+  width:220rpx;
+  margin: 20rpx 0rpx 50rpx 0rpx;
+}
+#ccc{
+  width:170rpx;
+}
+#btn1{
+  border-radius: 0;
+  font-weight: 400;
+}
+.money{
+  border:3rpx solid #D2B48C;
+  font-size: large;
+  font-weight:300;
+  height:100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#btn2{
+  border-radius: 0rpx;
+  font-weight: 400;
+}
+
